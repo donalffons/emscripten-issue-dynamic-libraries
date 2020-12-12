@@ -1,0 +1,41 @@
+Arguments: 
+  /home/sebastian/.nvm/versions/node/v15.3.0/bin/node /home/sebastian/.yarn/bin/yarn.js add opencascade.j@2.0.0-beta.57120e6
+
+PATH: 
+  /home/sebastian/.yarn/bin:/home/sebastian/.config/yarn/global/node_modules/.bin:/home/sebastian/.yarn/bin:/home/sebastian/.config/yarn/global/node_modules/.bin:/home/sebastian/.cache/cloud-code/installer/google-cloud-sdk/bin:/home/sebastian/.nvm/versions/node/v15.3.0/bin:/home/sebastian/.yarn/bin:/home/sebastian/.config/yarn/global/node_modules/.bin:/home/sebastian/.local/bin:/opt/google-cloud-sdk/bin:/usr/condabin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  15.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/opencascade.j: Not found
+      at Request.params.callback [as _callback] (/home/sebastian/.yarn/lib/cli.js:66987:18)
+      at Request.self.callback (/home/sebastian/.yarn/lib/cli.js:140748:22)
+      at Request.emit (node:events:376:20)
+      at Request.<anonymous> (/home/sebastian/.yarn/lib/cli.js:141720:10)
+      at Request.emit (node:events:376:20)
+      at IncomingMessage.<anonymous> (/home/sebastian/.yarn/lib/cli.js:141642:12)
+      at Object.onceWrapper (node:events:482:28)
+      at IncomingMessage.emit (node:events:388:22)
+      at endReadableNT (node:internal/streams/readable:1294:12)
+      at processTicksAndRejections (node:internal/process/task_queues:80:21)
+
+npm manifest: 
+  {
+    "name": "emscripten-issue-dynamic-libraries",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

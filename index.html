@@ -1,0 +1,46 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script type="module">
+      import opencascade from './node_modules/opencascade.js/dist/release/dynamic_web.js';
+      window.setImmediate = () => {}
+      (async () => {
+        const ocInstance = await opencascade({
+          locateFile: f => {
+            if(f.endsWith(".wasm")) {
+              return "./node_modules/opencascade.js/dist/release/dynamic_web.wasm";
+            }
+            return f;
+          },
+          dynamicLibraries: [
+            "TKernel",
+            "TKMath",
+            "TKG2d",
+            "TKV3d",
+            "TKService",
+            "TKMesh",
+            "TKSTEP",
+            "TKSTEP209",
+            "TKSTEPAttr",
+            "TKSTEPBase",
+            "TKXSBase",
+            "TKShHealing",
+            "TKGeomAlgo",
+            "TKBRep",
+            "TKGeomBase",
+            "TKG3d",
+            "TKTopAlgo",
+            "TKCDF",
+            "TKLCAF",
+            "TKCAF",
+            "TKVCAF",
+            "TKXCAF",
+            "TKXDESTEP",
+            "TKRWMesh",
+          ].map(l => `./node_modules/opencascade.js/dist/release/modules/${l}.wasm`),
+        });
+      })()
+    </script>
+  </body>
+</html>

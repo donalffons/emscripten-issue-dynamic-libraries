@@ -1,0 +1,9 @@
+{
+  "name": "emscripten-issue-dynamic-libraries",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "opencascade.js": "2.0.0-beta.57120e6"
+  }
+}
